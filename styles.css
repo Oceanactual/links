@@ -1,22 +1,18 @@
 body {
-    background-color: #5f6c7b;
-    padding: 0 128px;
+    margin: 0;
 }
 
 .background--custom {
-    background-color: #FFFFFF;
     width: 100vw;
     height: 100vh;
-    position: absolute;
     overflow: hidden;
-    z-index: -2;
+    position: absolute;
     top: 0;
     left: 0;
+    z-index: -1;
 }
 
 canvas#canvas {
-    z-index: -1;
-    position: absolute;
     width: 100%;
     height: 100%;
     transform: rotate(0deg) scale(2) translateY(0%);
@@ -27,16 +23,25 @@ canvas#canvas {
     --gradient-speed: 0.000002;
 }
 
-.name {
-    color: #fffffe;
-    margin: 10px;
-    border-bottom: 10px;
-}
-
 .layout {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 40px 128px 0;
+}
+
+.banner {
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 500px;
+    border: solid 3px black;
+}
+
+.name {
+    color: #fffffe;
+    margin: 10px;
+    border-bottom: 10px;
 }
 
 .item {
@@ -55,19 +60,9 @@ canvas#canvas {
 }
 
 .item_image {
-    max-width: 50px;
-    max-height: 50px;
-    min-width: 50px;
-    min-height: 50px;
+    width: 50px;
+    height: 50px;
     border-radius: 50px;
-}
-
-.banner {
-    max-width: 200px;
-    max-height: 200px;
-    object-fit: cover;
-    border-radius: 500px;
-    border: solid 3px black;
 }
 
 .social {
