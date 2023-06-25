@@ -1,0 +1,75 @@
+body {
+    background-color: #5f6c7b;
+    padding: 0 128px;
+}
+
+.background--custom {
+    background-color: #FFFFFF;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    overflow: hidden;
+    z-index: -2;
+    top: 0;
+    left: 0;
+}
+
+canvas#canvas {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(0deg) scale(2) translateY(0%);
+    --gradient-color-1: #3D27F7;
+    --gradient-color-2: #1F5DC7;
+    --gradient-color-3: #3AD6BE;
+    --gradient-color-4: #2FBAC2;
+    --gradient-speed: 0.000002;
+}
+
+.name {
+    color: #fffffe;
+    margin: 10px;
+    border-bottom: 10px;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    color: #fffffe;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+}
+
+.atag {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.item_image {
+    max-width: 50px;
+    max-height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 50px;
+}
+
+.banner {
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 500px;
+    border: solid 3px black;
+}
+
+.social {
+    color: #fffffe;
+}
